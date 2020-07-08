@@ -1,0 +1,50 @@
+.SearchInput-wrapper,
+.AmountInput-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.SearchResultList,
+.CountryExchangeList {
+  padding: 16px;
+}
+
+.SearchInput,
+.AmountInput {
+  width: 60%;
+}
+
+.SearchResultList {
+  margin: 10px 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.CountryExchangeList-item {
+  margin: 10px 0;
+}
+
+.SearchResultList-item {
+  margin: 10px 1%;
+  width: 47%;
+  cursor: pointer;
+  text-align: left;
+}
+
+.SearchResult .card .media .media-left figure {
+  display: flex;
+  align-items: center;
+}
+
+.SearchResult .card .media {
+  align-items: center;
+}
+
+.CountryExchange .card-header .card-header-title {
+  justify-content: center;
+}
+
+.CountryExchange .card-content .content {
+  text-align: left;
+}
