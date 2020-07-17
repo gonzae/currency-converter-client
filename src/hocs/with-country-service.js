@@ -3,11 +3,18 @@ import CountryService from "../lib/countryService";
 
 export default function (ComposedComponent) {
   class withCountryService extends Component {
-    render() {
-      const countryService = new CountryService();
+    constructor(props) {
+      super(props);
 
+      this.countryService = new CountryService();
+    }
+
+    render() {
       return (
-        <ComposedComponent {...this.props} countryService={countryService} />
+        <ComposedComponent
+          {...this.props}
+          countryService={this.countryService}
+        />
       );
     }
   }
